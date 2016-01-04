@@ -14,9 +14,11 @@ It should output something like:
     -				0	com.justinknoll.graphite.fullcount
 
 Copy the script to ~/bin:
+
     $ cp inbox_feed_graphite.py ~/bin/
 
 Edit credentials including your hosted graphite API key.
 
 Install feedparser
+
     $ sudo easy_install feedparser
