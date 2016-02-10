@@ -1,8 +1,8 @@
 gmail-graphite
 ===========
-To enable the launchd action:
-launchctl load ~/Documents/git/gmail-graphite/com.justinknoll.graphite.fullcount.plist
-launchctl start com.justinknoll.graphite.fullcount
+
+To start the launchctl service:
+    $ ./start.sh
 
 Test w/ this command:
 
