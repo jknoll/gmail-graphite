@@ -22,3 +22,5 @@ Edit credentials including your hosted graphite API key.
 Install feedparser
 
     $ sudo easy_install feedparser
+
+Note: this mechanism is incompatible with two-factor authentication.
