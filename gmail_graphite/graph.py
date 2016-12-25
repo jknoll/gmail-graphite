@@ -3,16 +3,17 @@ import feedparser
 import socket
 from config import config
 
-# Example URL: https://username@example.org:password@gmail.google.com/mail/feed/atom
 def get_count(url):
-    d = feedparser.parse('url')
+    print(url)
+    d = feedparser.parse(url)
+    print(d)
     fullcount = d['feed']['fullcount']
     return fullcount
 
 def send_count(count):
-    message = "api_key.personal.email.bittorrent.fullcount %s\n" % count
+    message = config['graphite_prefix'] + " %s\n" % count
 
-    conn = socket.create_connection(("carbon.hostedgraphite.com", 2003))
+    conn = socket.create_connection((config['graphite_host'], config['graphite_port']))
     conn.send(message)
     conn.close()
 
