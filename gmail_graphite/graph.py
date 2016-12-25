@@ -4,15 +4,12 @@ import socket
 from config import config
 
 def get_count(url):
-    print(url)
     d = feedparser.parse(url)
-    print(d)
     fullcount = d['feed']['fullcount']
     return fullcount
 
 def send_count(count):
     message = config['graphite_prefix'] + " %s\n" % count
-
     conn = socket.create_connection((config['graphite_host'], config['graphite_port']))
     conn.send(message)
     conn.close()
