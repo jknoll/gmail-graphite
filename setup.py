@@ -11,9 +11,9 @@ config = {
   'author_email': 'justin.knoll@gmail.com',
   'version': '0.1',
   'install_requires': ['nose', 'feedparser'],
-  'packages': ['gmail-graphite'],
+  'packages': ['gmail_graphite'],
   'scripts': [],
-  'name': 'gmail-graphite'
+  'name': 'gmail_graphite'
 }
 
 setup(**config)
