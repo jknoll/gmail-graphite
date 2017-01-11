@@ -1,6 +1,7 @@
 gmail-graphite
 ===========
 ![Travis Status](https://api.travis-ci.org/jknoll/gmail-graphite.svg?branch=master)
+
 Make sure the com.justinknoll.graphite.fullcount.plist file is owned by you and chmod 600.
 
 To start the launchctl service:
