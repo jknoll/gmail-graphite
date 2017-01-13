@@ -1,10 +1,23 @@
 gmail-graphite
-===========
+==============
+
 <!---
 ![Travis Status](https://api.travis-ci.org/jknoll/gmail-graphite.svg?branch=master)
 -->
 
-Make sure the com.justinknoll.graphite.fullcount.plist file is owned by you and chmod 600.
+Installation
+------------
+
+To install on Mac OS El Capitan or later, you'll need to ensure you're running a user-modifiable python framework or you'll run into issues with pip install being blocked by System Integrity Protection.
+
+Install python via homebrew:
+
+    $ brew install python
+    $ pip --version
+
+Copy config and add credentials including your hosted graphite API key:
+
+    $ cp config_example.py config.py
 
 To start the launchctl service:
     $ ./start.sh
@@ -22,10 +35,19 @@ Copy the script to ~/bin:
 
     $ cp inbox_feed_graphite.py ~/bin/
 
-Edit credentials including your hosted graphite API key.
+Notes
+-----
 
-Install feedparser
+This mechanism is incompatible with two-factor authentication.
 
-    $ sudo easy_install feedparser
+Make sure the com.justinknoll.graphite.fullcount.plist file is owned by you and chmod 600.
 
-Note: this mechanism is incompatible with two-factor authentication.
+It appears that you cannot refer to ~ within the paths in the .plist.
+
+If forced to modify the .plist, you can validate your edits with:
+
+    $ plutil com.justinknoll.graphite.fullcount.plist
+
+If running the ~/bin/ file works, but launchd seems to be failing, try:
+
+    $ tail -f /var/log/system.log # Or use Console.app and search for launchd.
