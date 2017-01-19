@@ -35,6 +35,8 @@ Copy the script to ~/bin:
 
     $ cp inbox_feed_graphite.py ~/bin/
 
+To make the launchd scripts run as a daemon on boot, you will need to set the .plist files chown root and chmod wheel, then copy them to /Library/LaunchDaemons/.
+
 Notes
 -----
 
