@@ -10,7 +10,7 @@ config = {
     'download_url': 'https://github.com/jknoll/gmail-graphite',
     'author_email': 'justin.knoll@gmail.com',
     'version': '0.1',
-    'install_requires': ['nose', 'feedparser'],
+    'install_requires': ['nose', 'feedparser', 'mock'],
     'packages': ['gmail_graphite'],
     'scripts': [],
     'name': 'gmail_graphite'
