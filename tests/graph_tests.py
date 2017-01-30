@@ -4,14 +4,9 @@ import feedparser
 from pickle import load
 from mock import MagicMock
 from pprint import pprint
+from config import config
 
 feedoutput = ''
-config = {
-    'gmail_feed_url': '',
-    'graphite_prefix': '',
-    'graphite_host': '',
-    'graphite_port': ''
-}
 
 
 def setup():
