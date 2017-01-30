@@ -2,12 +2,22 @@
 import feedparser
 import socket
 from config import config
+from pickle import dumps, dump
+
+
+def dump_feed_response(url):
+    # Useful for dumping the response for use in mocking during testing.
+    d = feedparser.parse(url)
+    f = file('tests/feedoutput.pickle', 'w+')
+    dump(d, f)
 
 
 def get_count(url):
     d = feedparser.parse(url)
-    fullcount = d['feed']['fullcount']
-    return fullcount
+    try:
+        return d['feed']['fullcount']
+    except KeyError as e:
+        print "KeyError: %s" % str(e)
 
 
 def send_count(count):

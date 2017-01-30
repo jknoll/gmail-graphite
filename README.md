@@ -1,9 +1,7 @@
 gmail-graphite
 ==============
 
-<!---
 ![Travis Status](https://api.travis-ci.org/jknoll/gmail-graphite.svg?branch=master)
--->
 
 Installation
 ------------
