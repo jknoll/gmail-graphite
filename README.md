@@ -13,6 +13,9 @@ Install python via homebrew:
     $ brew install python
     $ pip --version
 
+(You may run into issues running as a LaunchDaemon, because the daemon will not necessarily use your user-modifiable python. This can be circumvented by replacing the `#!/usr/bin/env python` shebang with one that points to your
+user-modifiable installation.)
+
 Copy config and add credentials including your hosted graphite API key:
 
     $ cp config_example.py config.py
@@ -51,3 +54,5 @@ If forced to modify the .plist, you can validate your edits with:
 If running the ~/bin/ file works, but launchd seems to be failing, try:
 
     $ tail -f /var/log/system.log # Or use Console.app and search for launchd.
+
+When running as a LaunchDaemon on a system with software updates set to automatic, it's helpful to enable automatic user login if the machine is in a physically secure location. Without this, a software update will reboot the system and the machine will not re-join the wifi network.
