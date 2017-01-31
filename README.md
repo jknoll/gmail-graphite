@@ -3,6 +3,8 @@ gmail-graphite
 
 ![Travis Status](https://api.travis-ci.org/jknoll/gmail-graphite.svg?branch=master)
 
+
+![Inbox Graph](./docs/img/inbox_zero.png)
 Installation
 ------------
 
