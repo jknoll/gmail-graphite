@@ -1,0 +1,6 @@
+# Control file for coverage.py
+
+[report]
+# Regexes for lines to exclude from consideration
+exclude_lines = 
+  if __name__ == "__main__":
