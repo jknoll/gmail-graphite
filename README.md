@@ -7,6 +7,10 @@ gmail-graphite
 
 ![Inbox Graph](./docs/img/inbox_zero.png)
 
+Overview
+--------
+This module runs as a LaunchDaemon and periodically polls a GMail account's status feed, parses the unread message count and sends it to a Graphite instance for graphing and analysis.
+
 Installation
 ------------
 
