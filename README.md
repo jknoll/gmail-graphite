@@ -2,7 +2,7 @@ gmail-graphite
 ==============
 
 [![Travis Status](https://api.travis-ci.org/jknoll/gmail-graphite.svg?branch=master)](https://api.travis-ci.org/jknoll/gmail-graphite.svg?branch=master)
-[![Codecov Status](http://codecov.io/github/bear/python-twitter/coverage.svg?branch=master)](http://codecov.io/github/bear/python-twitter/coverage.svg?branch=master)
+[![Codecov Status](http://codecov.io/github/jknoll/gmail-graphite/coverage.svg?branch=master)](http://codecov.io/github/jknoll/gmail-graphite/)
 
 
 ![Inbox Graph](./docs/img/inbox_zero.png)
