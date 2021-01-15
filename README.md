@@ -1,6 +1,8 @@
 gmail-graphite
 ==============
 
+*Note: this project needs to be updated in order to be compatible with 2FA and the granting of application-specific privileges and access tokens.*
+
 [![Travis Status](https://api.travis-ci.org/jknoll/gmail-graphite.svg?branch=master)](https://api.travis-ci.org/jknoll/gmail-graphite.svg?branch=master)
 [![Codecov Status](http://codecov.io/github/jknoll/gmail-graphite/coverage.svg?branch=master)](http://codecov.io/github/jknoll/gmail-graphite/)
 
